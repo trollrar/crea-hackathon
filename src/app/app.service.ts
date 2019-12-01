@@ -22,6 +22,6 @@ export class AppService {
 }
 
 export class Balance {
-    constructor(public balance: number,
+    constructor(public balance: number, public clicks: number
     ) { }
 }
