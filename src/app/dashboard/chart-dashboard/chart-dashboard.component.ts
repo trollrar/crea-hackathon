@@ -14,7 +14,7 @@ export class ChartDashboardComponent implements OnInit {
 
   public options = {
     borderColor: '#ffffff',
-
+maintainAspectRatio: true,
     responsive: true,
     scales: {
       xAxes: [{
