@@ -12,12 +12,12 @@ import {share} from "rxjs/operators";
 export class ProductListComponent implements OnInit{
   products = products;
 
-  public balance: Balance = new Balance(0);
+  public balance: Balance = new Balance(0, 0);
   constructor (private _appService: AppService) {}
 
     ngOnInit(): void {
         this._appService.getBalance().subscribe(data => {
-            this.share();
+            //this.share();
             console.log(data);
             this.balance = data;
         });
