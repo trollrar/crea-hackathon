@@ -23,8 +23,9 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
       HttpClientModule,
     RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
-      { path: 'device', component: DemoComponent },
+      { path: '', component: DashboardComponent },
+      { path: 'device', component: ProductListComponent},
+      { path: 'demo', component: DemoComponent },
     ]),
       FontAwesomeModule
   ],
