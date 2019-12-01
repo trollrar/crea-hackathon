@@ -5,20 +5,37 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
-import { ProductListComponent } from './product-list/product-list.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { MonitoringComponent } from './monitoring/monitoring.component';
+import { DemoComponent } from './demo/demo.component';
+import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
+import { DashboardComponent } from './dashboard/dashboard.component';
+import {ProductListComponent} from "./product-list/product-list.component";
+import { ChartsModule } from 'ng2-charts';
+import { ChartDashboardComponent } from './dashboard/chart-dashboard/chart-dashboard.component';
 
 @NgModule({
   imports: [
     BrowserModule,
+      ChartsModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
-    ])
+      { path: 'pathDemo', component: DemoComponent },
+
+    ]),
+      FontAwesomeModule
   ],
   declarations: [
     AppComponent,
     TopBarComponent,
-    ProductListComponent
+    SidebarComponent,
+    MonitoringComponent,
+    DemoComponent,
+    DashboardComponent,
+      ProductListComponent,
+      ChartDashboardComponent
+
   ],
   bootstrap: [ AppComponent ]
 })
