@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {AppService, Balance} from "../app.service";
 
 @Component({
   selector: 'app-sidebar',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
-  constructor() { }
+    public balance: Balance = new Balance(0, 0);
+    constructor (private _appService: AppService) {}
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+        this._appService.getBalance().subscribe(data => {
+            this.balance = data;
+        });
+    }
 
 }

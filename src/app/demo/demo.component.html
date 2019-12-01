@@ -52,9 +52,9 @@
                   <td>December</td>
                   <td>Clicks</td>
                   <td>Renting mouse clicks</td>
-                  <td>21</td>
+                  <td>{{balance.clicks}}</td>
                   <td>€ 0.01</td>
-                  <td>€ 3452</td>
+                  <td>{{balance.clicks * 0.1}}</td>
                 </tr>
                 </tbody>
               </table>
@@ -64,7 +64,7 @@
           <div class="d-flex flex-row-reverse bg-dark text-white p-4">
             <div class="py-3 px-5 text-right">
               <div class="mb-2">Total</div>
-              <div class="h2 font-weight-light">€ 234,234</div>
+              <div class="h2 font-weight-light">{{balance.clicks * 0.1}}</div>
             </div>
 
 

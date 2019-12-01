@@ -44,18 +44,14 @@
       </div>
     </div>
       <div class="sidebar-header">
-        <div class="user-pic">
-          <img class="img-responsive img-rounded" src="\src\assets\79297649_718673525286162_1404134854714458112_n.png"
-               alt="User picture">
-        </div>
         <div class="user-info">
-          <span class="user-name">Fares
-            <strong>Villca</strong>
+          <span class="user-name">
+            <strong>Balance</strong>
           </span>
-          <span class="user-role">Client</span>
+          <span class="user-role">{{balance.balance}}</span>
           <span class="user-status">
-            <i class="fa fa-circle"></i>
-            <span>Online</span>
+            Spent:
+            <span>{{balance.clicks * 0.1}}</span>
           </span>
         </div>
       </div>
