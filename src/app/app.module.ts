@@ -13,16 +13,18 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import {ProductListComponent} from "./product-list/product-list.component";
 import { ChartsModule } from 'ng2-charts';
 import { ChartDashboardComponent } from './dashboard/chart-dashboard/chart-dashboard.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   imports: [
     BrowserModule,
       ChartsModule,
     ReactiveFormsModule,
+      HttpClientModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
-      { path: 'pathDemo', component: DemoComponent },
-
+      { path: 'device', component: DemoComponent },
     ]),
       FontAwesomeModule
   ],
