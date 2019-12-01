@@ -32,7 +32,13 @@ export class XYGraphComponent implements OnInit {
       borderColor: 'white',
       backgroundColor: this.colors[0]
     },
-
+      scales: {
+          yAxes: [{
+              ticks: {
+                  beginAtZero: true
+              }
+          }]
+      }
   };
   @ViewChild('chart', {static: true}) canvas: ElementRef;
   public chart: CanvasRenderingContext2D;
