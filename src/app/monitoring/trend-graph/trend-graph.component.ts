@@ -10,7 +10,7 @@ export class TrendGraphComponent implements OnInit {
 
   constructor() { }
   colors = ['#1B5E20','#880E4F','#004D40','#311B92','#E65100','#0D47A1','#4A148C','#311B92','#B71C1C','#01579B','#006064','#33691E','#F9A825','#BF360C'];
-  graphData = [[100,110,100,100,40,2,4,3,7,3,4,5,3,4,5,3,4,5,100,110,111,110,111],[1,2,10,20,1,2,10,20,3,2,4,30,20,2,3,4,5,10,20,10,23,1,2],[60,50,45,46,76,46,53,64,64,46,34,35,46,75,43,43,23,35,65,45,67]];
+  graphData = [[10648,10398,9653,10014,11201,10836,10836,17532,12674,10432,11792,0]];
 
   public options = {
     responsive: true,
@@ -40,7 +40,7 @@ export class TrendGraphComponent implements OnInit {
  // @ViewChild('chart', {static: true}) canvas: ElementRef;
   public chart: CanvasRenderingContext2D;
   public legend = false;
-  public labels = ['00:30:00','00:30:00','00:30:00','00:30:00','00:30:00','00:30:00','00:30:00','00:30:00','00:30:00','00:30:00','00:30:00','00:30:00','00:30:00','00:30:00','00:30:00','00:30:00','00:30:00','00:30:00'  ];
+  public labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ];
   public dataset: ChartDataSets[] = [
   ];
 

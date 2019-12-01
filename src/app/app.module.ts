@@ -32,6 +32,7 @@ import {XYGraphComponent} from "./monitoring/x-y-graph/x-y-graph.component";
       HttpClientModule,
     RouterModule.forRoot([
       { path: '', component: DashboardComponent },
+      { path: 'dashboard', component: DashboardComponent },
       { path: 'device', component: ProductListComponent},
       { path: 'demo', component: DemoComponent },
       { path: 'monitoring', component: MonitoringComponent },
