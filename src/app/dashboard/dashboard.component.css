@@ -1,12 +1,7 @@
 .text-center {
     text-align: center;
 }
-.center {
-    display: block ;
-    margin-left: 29%;
 
-    width: 60%;
-}
 
 .co {
     background-color: rgba(121, 144, 122, 0.65);
@@ -45,3 +40,5 @@ h5 {
 .white {
     color: white;
 }
+
+
