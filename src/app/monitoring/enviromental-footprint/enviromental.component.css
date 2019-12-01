@@ -1,0 +1,13 @@
+img{
+
+    max-height: 30px;
+    max-width: 30px;
+}
+
+.card-header {
+    background: #79907a;
+}
+.padding{
+    padding-top: 0;
+    padding-bottom: 0;
+}
